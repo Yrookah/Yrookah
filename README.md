@@ -4,13 +4,13 @@ I'm an **electrical and electronics engineer with a knack for programming** pass
 
 ## 🚀 Projects & Highlights
 
-- **Simpson’s 1/3 Rule Program:**  
+- **Simpson’s 1/3 Rule Programme:**  
   C++ program implementing Simpson’s 1/3 rule for numerical integration.
 
 - **Area of a Triangle Calculator:**  
   Handy C++ tool to quickly find the area of a triangle given its sides.
 
-- **Simpson’s 3/8 Rule Program:**  
+- **Simpson’s 3/8 Rule Programme:**  
   Another numerical integration project using Simpson’s 3/8 rule.
 
 ## 🛠️ Skills
