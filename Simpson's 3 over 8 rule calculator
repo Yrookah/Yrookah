@@ -1,0 +1,47 @@
+//simpson's 3/8 rule for definite integrals calculation
+#include<iostream>
+#include<cmath>
+using namespace std;
+double f(double x)
+{
+	double a=1/(1+x*x);//write the function whose definite integral is to be calculated here
+	//double a=sqrt(1+x*x);
+	//double a=x*x;
+	return a;
+}
+int main()
+{
+	cout.precision(4);//set the precision
+	cout.setf(ios::fixed);
+	int n,i;//n is for subintervals and i is for loop
+	double a,b,c,h,sum=0,integral;
+	cout<<"\n ENTER THE LIMITS OF INTEGRATION,\n\n INITIAL LIMIT,a=";
+	cin>>a;
+	cout<<"\n FINAL LIMIT,b=";//get the limits of integration
+	cin>>b;
+	cout<<"\n ENTER THE NUMBER OF SUBINTERVALS(IT CAN BE ANY NUMBER),\nn=";
+	//get the number of subintervals
+	cin>>n;
+	double x[n+1],y[n+1];
+	h=(b-a)/n;
+	for(i=0;i<n+1;i++)//get the width of the subintervals
+	{
+	x[i]=a+i*h;//loop to evaluate x0...xn and y0...yn
+	y[i]=f(x[i]);//and store them in arrays
+	}  
+	for(i=1;i<n;i+=3)
+	{
+		sum=sum+3.0*(y[i]+y[i]);//loop to evaluate 3*(y1+y4+y7+...+yn-2)
+	for(i=2;i<n-1;i+=3)
+	{
+		sum=sum+3.0*y[i];//loop to evaluate 3*(y2+y5+y8+...+yn-1)
+	}
+	for(i=3;i<n-2;i+=3)
+	{
+		sum=sum+2.0*y[i];/*loop to evaluate 2*(y3+y6+y9+...+yn-3)+2*(y2+y4+y6+...+yn-2)*/	
+	}
+	integral=3*h/8*(y[0]+y[n]+sum);//(3*h/8)*[y0+yn+3*(y1+y4+y7+...+yn-2)+3*(y2+y5+y8+...+yn-1)]+2*(y3+y6+y9+...+yn-3)
+	cout<<"\n THE DEFINITE INTEGRAL IS"<<integral<<"\n"<<endl;
+	return 0;
+}
+}
