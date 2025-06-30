@@ -12,27 +12,29 @@ I'm an **electrical and electronics engineer with a knack for programming** pass
 
 - **Simpson’s 3/8 Rule Programme:**  
   Another numerical integration project using Simpson’s 3/8 rule.
+  
+  - **Trapezoidal Rule Programme:**  
+  Accurate area estimation and integration using the trapezoidal rule in C++.
 
 ## 🛠️ Skills
 
-- **Languages:** C++
-- **Interests:** Numerical methods, algorithm challenges, and building practical tools.
+- **Programming Language:** C++
+- **Focus Areas:** Numerical methods, mathematics in programming, building practical tools.
 
 ## 🌱 What I'm Working On
 
-- Exploring more numerical algorithms and mathematical programming.
-- Improving efficiency and code readability in my C++ projects.
+- Exploring new algorithms and mathematical programming techniques.
+- Sharpening my C++ skills and learning about code optimization.
 
-<!-- Optionally add social links below. Comment out if not needed. -->
 <!--
 ## 📫 Connect with me
 
-- [LinkedIn](#)
-- [Twitter](#)
+- [LinkedIn](www.linkedin.com/in/nkiruka-daniela-nwabuike-tech-savvy-electrical-and-electronics-engineer)
+- 
 -->
 
 ---
 
 > “Code is like humor. When you have to explain it, it’s bad.” — Cory House
 
-Thanks for stopping by!
+Thanks for visiting my profile!
